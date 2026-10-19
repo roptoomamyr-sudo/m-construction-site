@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши объекты и фотогалерея — M-CONSTRUCTION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-color: #b8860b; --dark-bg: #1a1e21; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f8f9fa; }
+        .navbar { background-color: var(--dark-bg); border-bottom: 3px solid var(--primary-color); }
+        .navbar-brand { color: var(--primary-color) !important; font-weight: bold; font-size: 22px; }
+        .nav-link { color: #fff !important; transition: 0.2s; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+        .page-header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18f029b?auto=format&fit=crop&w=1920&q=80') center/cover; color: white; padding: 60px 0; text-align: center; }
+        .section-title { color: var(--dark-bg); font-weight: bold; margin-bottom: 40px; text-align: center; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background-color: var(--primary-color); display: block; margin: 10px auto 0; }
+        .card-img-top { height: 240px; object-fit: cover; }
+        .gallery-card { border: none; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; height: 100%; background: white; overflow: hidden; }
+        .gallery-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .btn-gold { background-color: var(--primary-color); color: white; font-weight: bold; padding: 10px 25px; border-radius: 6px; border: none; }
+        .btn-gold:hover { background-color: #996d09; color: white; }
+        footer { background-color: var(--dark-bg); color: #adb5bd; padding: 40px 0; font-size: 14px; }
+        footer h5 { color: white; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">M-CONSTRUCTION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги и ангары</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Наши объекты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    <li class="nav-item"><a href="tel:+77710547766" class="btn btn-outline-warning btn-sm fw-bold">+7 771 054 77 66</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка страницы -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Галерея реализованных объектов</h1>
+            <p class="lead">Примеры построенных ангаров, зернохранилищ и металлоконструкций в Казахстане</p>
+        </div>
+    </header>
+
+    <!-- Сетка объектов -->
+    <main class="py-5">
+        <div class="container">
+            <h2 class="section-title">Фотографии сданных проектов</h2>
+            <div class="row g-4">
+                
+                <!-- Объект 1 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ангар под зернохранилище">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Арочный ангар под зернохранилище</h5>
+                            <p class="text-muted small mb-3">Костанайская область • Площадь: 1,000 м²</p>
+                            <p class="text-muted">Напольное хранение зерновых культур. Монтаж каркаса выполнен на болтовых соединениях в сжатые сроки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Объект 2 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Прямостенный склад">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Прямостенный складской комплекс</h5>
+                            <p class="text-muted small mb-3">г. Костанай • Площадь: 1,500 м²</p>
+                            <p class="text-muted">Универсальное утепленное здание под складские помещения и логистический распределительный центр.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Объект 3 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Ангар для спецтехники">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Ангар под стоянку сельхозтехники</h5>
+                            <p class="text-muted small mb-3">Северный Казахстан • Площадь: 800 м²</p>
+                            <p class="text-muted">Холодный ангар с широкими распашными воротами для обслуживания и хранения комбайнов и тракторов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Объект 4 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Производственный цех">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Производственный цех металлоконструкций</h5>
+                            <p class="text-muted small mb-3">г. Костанай • Площадь: 1,200 м²</p>
+                            <p class="text-muted">Каркасное здание промышленного назначения с усиленными фермами под установку грузоподъемного оборудования.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Объект 5 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18f029b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Тентовый ангар">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Тентовый ангар арочного типа</h5>
+                            <p class="text-muted small mb-3">Костанайская область • Площадь: 600 м²</p>
+                            <p class="text-muted">Быстровозводимое укрытие для хранения удобрений и сыпучих материалов с защитным ПВХ-покрытием.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Объект 6 -->
+                <div class="col-md-4">
+                    <div class="card gallery-card">
+                        <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Спортивный комплекс">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark mb-2">Быстровозводимый павильон</h5>
+                            <p class="text-muted small mb-3">г. Костанай • Площадь: 900 м²</p>
+                            <p class="text-muted">Многофункциональное здание с качественной теплоизоляцией и внутренней отделкой.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Блок призыва к действию -->
+            <div class="text-center mt-5 p-5 bg-white rounded shadow-sm">
+                <h3 class="fw-bold mb-3">Хотите реализовать свой проект?</h3>
+                <p class="text-muted mb-4">Мы рассчитаем стоимость и сроки строительства вашего ангара под ключ бесплатно.</p>
+                <a href="contacts.html" class="btn btn-gold btn-lg">Оставить заявку на расчет</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5>ТОО «Мамыр» (M-CONSTRUCTION)</h5>
+                    <p>Строительство быстровозводимых ангаров и металлоконструкций в Республике Казахстан.</p>
+                    <p class="mb-1">📍 г. Костанай, ул. Узкоколейная, 9</p>
+                    <p class="mb-1">📞 +7 771 054 77 66</p>
+                    <p class="mb-0">✉️ too.mamyr@mail.ru</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Юридическая информация</h5>
+                    <p class="mb-1">БИН 011240003418</p>
+                    <p class="mb-1">Лицензия СМР II категория ГС-2 № 03293</p>
+                    <p class="text-muted mt-3">© 2026 M-CONSTRUCTION. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
