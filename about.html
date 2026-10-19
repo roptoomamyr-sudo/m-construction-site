@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании и лицензиях — M-CONSTRUCTION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-color: #b8860b; --dark-bg: #1a1e21; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f8f9fa; }
+        .navbar { background-color: var(--dark-bg); border-bottom: 3px solid var(--primary-color); }
+        .navbar-brand { color: var(--primary-color) !important; font-weight: bold; font-size: 22px; }
+        .nav-link { color: #fff !important; transition: 0.2s; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-color) !important; }
+        .page-header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18f029b?auto=format&fit=crop&w=1920&q=80') center/cover; color: white; padding: 60px 0; text-align: center; }
+        .section-title { color: var(--dark-bg); font-weight: bold; margin-bottom: 40px; text-align: center; position: relative; }
+        .section-title::after { content: ''; width: 60px; height: 3px; background-color: var(--primary-color); display: block; margin: 10px auto 0; }
+        .about-card { background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 35px; height: 100%; border-left: 4px solid var(--primary-color); }
+        .license-box { background: white; border: 2px dashed var(--primary-color); border-radius: 8px; padding: 30px; text-align: center; }
+        .btn-gold { background-color: var(--primary-color); color: white; font-weight: bold; padding: 10px 25px; border-radius: 6px; border: none; }
+        .btn-gold:hover { background-color: #996d09; color: white; }
+        footer { background-color: var(--dark-bg); color: #adb5bd; padding: 40px 0; font-size: 14px; }
+        footer h5 { color: white; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">M-CONSTRUCTION</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги и ангары</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Наши объекты</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    <li class="nav-item"><a href="tel:+77710547766" class="btn btn-outline-warning btn-sm fw-bold">+7 771 054 77 66</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка страницы -->
+    <header class="page-header">
+        <div class="container">
+            <h1>О компании M-CONSTRUCTION</h1>
+            <p class="lead">Надежный партнер в сфере быстровозводимого строительства в Казахстане</p>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="py-5">
+        <div class="container">
+            
+            <!-- О компании описание -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4" style="color: var(--dark-bg);">ТОО «Мамыр» — качество, проверенное временем и делом</h2>
+                    <p class="text-muted">Мы специализируемся на полном цикле проектирования, заводского изготовления и монтажа быстровозводимых зданий, арочных и прямостенных ангаров, а также сложных металлоконструкций.</p>
+                    <p class="text-muted">Наша компания базируется в Костанае и успешно работает по всей территории Республики Казахстан. Мы обеспечиваем жесткий контроль качества на каждом этапе: от инженерных расчетов нагрузок до сдачи готового объекта заказчику.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="license-box shadow-sm">
+                        <h4 class="fw-bold mb-3" style="color: var(--primary-color);">Официальная документация</h4>
+                        <p class="mb-2"><strong>Юридическое лицо:</strong> ТОО «Мамыр»</p>
+                        <p class="mb-2"><strong>БИН:</strong> 011240003418</p>
+                        <p class="mb-3"><strong>Строительная лицензия:</strong> СМР II категория ГС-2 № 03293</p>
+                        <span class="badge bg-success p-2">Работаем строго в правовом поле РК</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Преимущества и принципы -->
+            <h2 class="section-title">Наши принципы и подходы</h2>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-color);">Заводская точность</h5>
+                        <p class="text-muted m-0">Все элементы металлокаркасов изготавливаются на производственной линии с соблюдением чертежей и ГОСТов, что гарантирует идеальную стыковку на площадке.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-color);">Монтаж на болтах</h5>
+                        <p class="text-muted m-0">Использование высокопрочных болтовых соединений исключает сварку в полевых условиях, ускоряет процесс сборки и повышает надежность конструкций.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about-card">
+                        <h5 class="fw-bold mb-3" style="color: var(--primary-color);">Прозрачные условия</h5>
+                        <p class="text-muted m-0">Составляем подробную смету и фиксируем сроки в договоре. Никаких скрытых доплат и затягивания сроков строительства.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Призыв к действию -->
+            <div class="text-center p-5 bg-white rounded shadow-sm">
+                <h3 class="fw-bold mb-3">Готовы обсудить ваш проект?</h3>
+                <p class="text-muted mb-4">Свяжитесь с нами удобным способом или отправьте заявку на расчет стоимости.</p>
+                <a href="contacts.html" class="btn btn-gold btn-lg">Перейти к контактам</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5>ТОО «Мамыр» (M-CONSTRUCTION)</h5>
+                    <p>Строительство быстровозводимых ангаров и металлоконструкций в Республике Казахстан.</p>
+                    <p class="mb-1">📍 г. Костанай, ул. Узкоколейная, 9</p>
+                    <p class="mb-1">📞 +7 771 054 77 66</p>
+                    <p class="mb-0">✉️ too.mamyr@mail.ru</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Юридическая информация</h5>
+                    <p class="mb-1">БИН 011240003418</p>
+                    <p class="mb-1">Лицензия СМР II категория ГС-2 № 03293</p>
+                    <p class="text-muted mt-3">© 2026 M-CONSTRUCTION. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
